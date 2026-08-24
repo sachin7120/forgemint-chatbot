@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>ForgeMint Chatbot</title>
+    <link rel="icon" type="image/png" href="favicon.png"> 
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+    <!-- Demo page -->
+
+    <main class="page">
+
+        <h1>ForgeMint</h1>
+
+        <p>
+            ForgeMint Chatbot Test
+        </p>
+
+    </main>
+
+
+    <!-- Chat toggle -->
+
+    <button
+        id="chatToggle"
+        class="chat-toggle"
+        aria-label="Open ForgeBot"
+    >
+        💬
+    </button>
+
+
+    <!-- Chatbot -->
+
+    <div
+        id="chatbot"
+        class="chatbot"
+    >
+
+
+        <!-- Header -->
+
+        <div class="chat-header">
+
+            <div class="bot-info">
+
+                <div class="bot-avatar">
+                    <img
+                        src="favicon.png"
+                        alt="ForgeMint"
+                    >
+
+                </div>
+
+                <div>
+
+                    <h3>ForgeBot</h3>
+
+                    <span>
+                        ForgeMint Assistant
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <button
+                id="closeChat"
+                class="close-button"
+            >
+                ×
+            </button>
+
+        </div>
+
+
+        <!-- Messages -->
+
+        <div
+            id="chatMessages"
+            class="chat-messages"
+        >
+        </div>
+
+
+        <!-- Quick replies -->
+
+        <div
+            id="quickReplies"
+            class="quick-replies"
+        >
+
+            <button data-message="What services do you offer?">
+                🚀 Services
+            </button>
+
+            <button data-message="What is your pricing?">
+                💰 Pricing
+            </button>
+
+            <button data-message="What is your development process?">
+                ⚙️ Process
+            </button>
+
+            <button data-message="Do you develop mobile apps?">
+                📱 Mobile Apps
+            </button>
+
+            <button data-message="Do you develop ecommerce websites?">
+                🛒 E-commerce
+            </button>
+
+            <button data-message="How can I contact ForgeMint?">
+                📞 Contact
+            </button>
+
+        </div>
+
+
+        <!-- Input -->
+
+        <div class="chat-input-container">
+
+            <input
+                id="messageInput"
+                type="text"
+                placeholder="Ask ForgeBot..."
+                autocomplete="off"
+            >
+
+            <button
+                id="sendButton"
+                aria-label="Send message"
+            >
+                ➤
+            </button>
+
+        </div>
+
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
